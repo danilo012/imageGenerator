@@ -136,20 +136,20 @@ footer {
  
 <script type="text/javascript" id="dcoder_script">// Example functions for the dashboard options
 function checkBalance() {
-    ('Your current balance is ₱100.');
+    pop('Your current balance is ₱100.');
 }
 
 function deposit() {
     let amount = prompt('Enter amount to deposit:');
     if (amount) {
-        (`$${amount} has been deposited to your account.`);
+        pop(`$${amount} has been deposited to your account.`);
     }
 }
 
 function withdraw() {
     let amount = prompt('Enter amount to withdraw:');
     if (amount) {
-       (`₱${amount} cannot be process please proceed to GDF FORM for withdrawal request to be able to withdraw your STORAGE PROFIT. make sure to input a valid amount.`);
+       pop(`₱${amount} cannot be process please proceed to GDF FORM for withdrawal request to be able to withdraw your STORAGE PROFIT. make sure to input a valid amount.`);
     }
 }
 
