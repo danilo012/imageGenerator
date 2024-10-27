@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+   <meta name="viewport" content="width=device-width"> 
+  <title>Qadar's Bank - Dashboard</title> 
+  <link rel="stylesheet" href="dashboard.css"> 
+ <style type="text/css" id="dcoder_stylesheet">* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f0f4f8;
+}
+
+.header {
+    background-color: #1e90ff;
+    padding: 10px 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #4682b4;
+    border-radius: 5px;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.welcome-section {
+    margin-bottom: 40px;
+}
+
+.welcome-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.dashboard-options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.option {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 200px;
+    cursor: pointer;
+}
+
+.option h3 {
+    margin-bottom: 10px;
+    color: #1e90ff;
+}
+
+.option:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    background-color: #1e90ff;
+    color: white;
+    padding: 10px;
+}</style></head> 
+ <body> 
+  <header class="header"> 
+   <h1>STORAGE DASHBOARD</h1> 
+   <nav> 
+    <ul> 
+    </ul> 
+   </nav> 
+  </header> 
+  <main> 
+   <section class="welcome-section"> 
+    <h2>Welcome to TINDAHAN NI MARITES </h2> 
+    <p>Manage your STORAGE with ease - Anthonel lazarte</p> 
+   </section> 
+   <section class="dashboard-options"> 
+    <div class="option" onclick="checkBalance()"> 
+     <h3>Check Balance</h3> 
+     <p>View your current account balance.</p> 
+    </div>     
+    <div class="option" onclick="withdraw()"> 
+     <h3>Withdraw</h3> 
+     <p>Withdraw funds from your STORAGE PROFIT .</p> 
+    </div>      <p></p>               
+    <div class="option" onclick="transactionHistory()"> 
+     <h3>Transaction History</h3> 
+     <p>View your past transactions.</p> 
+    </div> 
+   </section> 
+  </main> 
+  <footer> 
+   <p>© 2024 ECHOZONEph. All rights reserved.</p> 
+  </footer> 
+  <script src="dashboard.js"></script> 
+ 
+<script type="text/javascript" id="dcoder_script">// Example functions for the dashboard options
+function checkBalance() {
+    alert('Your current balance is ₱114.');
+}
+
+function deposit() {
+    let amount = prompt('Enter amount to deposit:');
+    if (amount) {
+        alert(`$${amount} has been deposited to your account.`);
+    }
+}
+
+function withdraw() {
+    let amount = prompt('Enter amount to withdraw:');
+    if (amount) {
+       alert(`₱${amount} cannot be process please proceed to GDF FORM for withdrawal request to be able to withdraw your STORAGE PROFIT. make sure to input a valid amount.`);
+    }
+}
+
+function transactionHistory() {
+    alert('Transaction History: \n1. Deposit: starter-A ₱110 \n2. Profit ₱4 \n3. Withdraw ₱0');
+}</script></body></html>
